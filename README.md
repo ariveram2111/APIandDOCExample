@@ -11,9 +11,9 @@ La API REST se ha desarrollado utilizando las siguientes librerías:
 Los endpoints de esta API REST, con sus métodos HTTP permitidos, son los siguientes:
 - ***http://localhost:5000/options/*** -> GET -> Sin parámetros -> Devuelve los principales métodos HTTP de una API REST y los errores más comunes.
 - ***http://localhost:5000/sayhello/*** -> GET -> Sin parámetros -> Devuelve un *hola* al usuario.
-- ***http://localhost:5000/calculate/<num>*** -> GET -> Hay que introducir un número en la URL -> Devuelve el cuadrado del número introducido en la URL.
-- ***http://localhost:5000/calculate/?num=<num>*** -> GET -> Hay que introducir el parámetro *<num>* -> Devuelve el cuadrado del número que se ha pasado como parámetro.
-- ***http://localhost:5000/concatenate/?cad1=Hello&cad2=World*** -> GET -> Hay que introducir dos parámetros: *<cad1>* y *<cad2>* -> Devuelve la concatenación de ambos parámetros.
+- ***http://localhost:5000/calculate/\<num\>*** -> GET -> Hay que introducir un número en la URL -> Devuelve el cuadrado del número introducido en la URL.
+- ***http://localhost:5000/calculate/?num=<num>*** -> GET -> Hay que introducir el parámetro *num* -> Devuelve el cuadrado del número que se ha pasado como parámetro.
+- ***http://localhost:5000/concatenate/?cad1=Hello&cad2=World*** -> GET -> Hay que introducir dos parámetros: *cad1* y *cad2* -> Devuelve la concatenación de ambos parámetros.
 - ***http://localhost:5000/users/<id>*** -> GET -> Hay que pasar un ID de usuario en la URL de la petición -> Devuelve el nombre de usuario asociado al ID introducido en la URL.
 
 Los datos mencionados en cada una de las peticiones anteriores se devuelven en formato JSON y dentro del campo *data* de la petición. Además, también se devuelve el *timestamp* de la petición.
