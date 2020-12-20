@@ -33,7 +33,7 @@ python restAPI.py
 
 ## 3. Desarrollo del cliente que consume la API REST
 
-Las peticiones se realizan con la librería de *Python* de *requests* que viene instalada por defecto. El objetivo de este cliente es mostrar ejemplos para consumir la API REST (por tanto, también funciona a modo de documentación de la API REST). También, se muestran ejemplos de error para que se vea qué respuesta arrojaría esta API REST en caso de que no encuentre la URL, no se realice la petición de forma correcta, etc. **¡¡ IMPORTANTE !!** Los métodos definidos de la API REST están en el apartado 1. Las peticiones de este apartado también contienen peticiones incorrectas para poder visualizar los errores que arroja la API REST. Si solamente desea ver los endpoints expuestos por esta API REST diríjase al apartado 1. 
+Las peticiones se realizan con la librería de *Python* de *requests*. El objetivo de este cliente es mostrar ejemplos para consumir la API REST (por tanto, también funciona a modo de documentación de la API REST). También, se muestran ejemplos de error para que se vea qué respuesta arrojaría esta API REST en caso de que no encuentre la URL, no se realice la petición de forma correcta, etc. **¡¡ IMPORTANTE !!** Los métodos definidos de la API REST están en el apartado 1. Las peticiones de este apartado también contienen peticiones incorrectas para poder visualizar los errores que arroja la API REST. Si solamente desea ver los endpoints expuestos por esta API REST diríjase al apartado 1. 
 
 Las peticiones que prueba este cliente son las siguientes:
 - ***[http://localhost:5000/options/](http://localhost:5000/options/)*** -> GET -> <span style="color:green">Petición correcta</span>
