@@ -58,7 +58,7 @@ La librería *requests* viene por defecto instalada en *Python*. Por tanto, no e
 python client.py
 ```
 
-# 5. Documentación de la práctica
+## 5. Documentación de la práctica
 
 Tal y como se menciona en [el artículo propuesto en la asignatura](https://realpython.com/documenting-python-code/), un proyecto debe **comentarse y documentarse**. La parte de comentarios va más destinada a los desarrolladores para que el código desarrollado sea fácilmente entendible. La parte de documentación está destinada a los desarrolladores y a los usuarios que quieren utilizar la aplicación, proyecto, script, etc. 
 
@@ -68,7 +68,7 @@ Para la parte de documentación, se han utilizados los comentarios con *"""* de 
 
 Además, con el fin de facilitar la instalación y ejecución, también se proporciona un fichero ***requirements.txt*** con las librerías necesarias para ejecutar la práctica.
 
-# 6. Autoría de la práctica
+## 6. Autoría de la práctica
 
 Alberto Rivera Martínez. Contacto: a.riveram.2016@alumnos.urjc.es.
 
