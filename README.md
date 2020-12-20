@@ -5,8 +5,8 @@ El objetivo de la práctica del módulo 3 de la asignatura es desarrollar una AP
 ## 1. Desarrollo de la API REST
 
 La API REST se ha desarrollado utilizando las siguientes librerías:
-    - ***Flask*** para el desarrollo de la API REST.
-    - ***werkzeug*** para gestionar las excepciones generales de la API REST ajenas a los controladores/endpoints declarados.
+- ***Flask*** para el desarrollo de la API REST.
+- ***werkzeug*** para gestionar las excepciones generales de la API REST ajenas a los controladores/endpoints declarados.
 
 Los endpoints de esta API REST, con sus métodos HTTP permitidos, son los siguientes:
     - ***http://localhost:5000/options/*** -> GET -> Sin parámetros -> Devuelve los principales métodos HTTP de una API REST y los errores más comunes.
@@ -21,35 +21,35 @@ Los datos mencionados en cada una de las peticiones anteriores se devuelven en f
 ## 2. Ejecución de la API REST
 
 Para ejecutar la API REST, hay que seguir los siguientes pasos:
-    1. Instalar los requerimientos a partir del fichero *requirements.txt*.
-    ```
-    pip install -r requirements
-    ```
-    2. Ejecutar el fichero *restAPI.py* con *Python*.
-    ```
-    python restAPI.py
-    ```
-    3. La API REST ya estaría lista para ser consumida.
+1. Instalar los requerimientos a partir del fichero *requirements.txt*.
+```
+pip install -r requirements
+```
+2. Ejecutar el fichero *restAPI.py* con *Python*.
+```
+python restAPI.py
+```
+3. La API REST ya estaría lista para ser consumida.
 
 ## 3. Desarrollo del cliente que consume la API REST
 
 Las peticiones se realizan con la librería de *Python* de *requests* que viene instalada por defecto. El objetivo de este cliente es mostrar ejemplos para consumir la API REST (por tanto, también funciona a modo de documentación de la API REST). También, se muestran ejemplos de error para que se vea qué respuesta arrojaría esta API REST en caso de que no encuentre la URL, no se realice la petición de forma correcta, etc. **¡¡ IMPORTANTE !!** Los métodos definidos de la API REST están en el apartado 1. Las peticiones de este apartado también contienen peticiones incorrectas para poder visualizar los errores que arroja la API REST. Si solamente desea ver los endpoints expuestos por esta API REST diríjase al apartado 1. 
 
 Las peticiones que prueba este cliente son las siguientes:
-    - ***http://localhost:5000/options/*** -> GET -> <span style="color:green">Petición correcta</span>
-    - ***http://localhost:5000/sayhello/*** -> GET -> <span style="color:green">Petición correcta</span>
-    - ***http://localhost:5000/calculate/10*** -> GET -> <span style="color:green">Petición correcta</span>
-    - ***http://localhost:5000/calculate/a*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/calculate/?num=10*** -> GET -> <span style="color:green">Petición correcta</span>
-    - ***http://localhost:5000/calculate/?num=a*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/calculate/*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/concatenate/?cad1=Hello&cad2=World*** -> GET -> <span style="color:green">Petición correcta</span>
-    - ***http://localhost:5000/concatenate/*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/users/4*** -> GET -> <span style="color:green">Petición correcta</span>
-    - ***http://localhost:5000/users/a*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/users/100*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/test/*** -> GET -> <span style="color:red">Petición incorrecta</span>
-    - ***http://localhost:5000/users/4*** -> POST -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/options/*** -> GET -> <span style="color:green">Petición correcta</span>
+- ***http://localhost:5000/sayhello/*** -> GET -> <span style="color:green">Petición correcta</span>
+- ***http://localhost:5000/calculate/10*** -> GET -> <span style="color:green">Petición correcta</span>
+- ***http://localhost:5000/calculate/a*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/calculate/?num=10*** -> GET -> <span style="color:green">Petición correcta</span>
+- ***http://localhost:5000/calculate/?num=a*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/calculate/*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/concatenate/?cad1=Hello&cad2=World*** -> GET -> <span style="color:green">Petición correcta</span>
+- ***http://localhost:5000/concatenate/*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/users/4*** -> GET -> <span style="color:green">Petición correcta</span>
+- ***http://localhost:5000/users/a*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/users/100*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/test/*** -> GET -> <span style="color:red">Petición incorrecta</span>
+- ***http://localhost:5000/users/4*** -> POST -> <span style="color:red">Petición incorrecta</span>
 
 ## 4. Ejecución del cliente
 
