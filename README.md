@@ -53,7 +53,7 @@ Las peticiones que prueba este cliente son las siguientes:
 
 ## 4. Ejecución del cliente
 
-La librería *requests* viene por defecto instalada en *Python*. Por tanto, no es necesario instalar ninguna librería. Para ejecutar el cliente hay que introducir el siguiente comando:
+La librería *requests* viene por defecto instalada en *Python*. Por tanto, no es necesario instalar ninguna librería (aun así se ha incluido en el fichero *requirements.txt* por si acaso). Para ejecutar el cliente hay que introducir el siguiente comando:
 ```
 python client.py
 ```
