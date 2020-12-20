@@ -58,6 +58,66 @@ La librería *requests* viene por defecto instalada en *Python*. Por tanto, no e
 python client.py
 ```
 
+La salida del cliente debería ser la siguiente:
+```
+================ CLIENT OF THE API REST ================
+[+]  GET  REQUEST -->  http://localhost:5000/options/
+[-] RESPONSE STATUS CODE -->  200
+[-] RESPONSE BODY -->  {"data":{"delete":"delete some information","errors":[400,404,405,500],"get":"return the information","post":"create a new resource","put":"modify/update the information"},"timestamp":1608466898693}
+
+[+]  GET  REQUEST -->  http://localhost:5000/sayhello/
+[-] RESPONSE STATUS CODE -->  200
+[-] RESPONSE BODY -->  {"data":"hola","timestamp":1608466901731}
+
+[+]  GET  REQUEST -->  http://localhost:5000/calculate/10
+[-] RESPONSE STATUS CODE -->  200
+[-] RESPONSE BODY -->  {"data":100,"timestamp":1608466904770}
+
+[+]  GET  REQUEST -->  http://localhost:5000/calculate/a
+[-] RESPONSE STATUS CODE -->  400
+[-] RESPONSE BODY -->  {"message":"The input (passed in the URL) has not a good format. It must be a number"}
+
+[+]  GET  REQUEST -->  http://localhost:5000/calculate/?num=10
+[-] RESPONSE STATUS CODE -->  200
+[-] RESPONSE BODY -->  {"data":100,"timestamp":1608466910850}
+
+[+]  GET  REQUEST -->  http://localhost:5000/calculate/?num=a
+[-] RESPONSE STATUS CODE -->  400
+[-] RESPONSE BODY -->  {"message":"The input (the parameter num) has not a good format. It must be a number"}
+
+[+]  GET  REQUEST -->  http://localhost:5000/calculate/
+[-] RESPONSE STATUS CODE -->  400
+[-] RESPONSE BODY -->  {"message":"It is mandatory to introduce the parameter <num>."}
+
+[+]  GET  REQUEST -->  http://localhost:5000/concatenate/?cad1=Hello&cad2=World
+[-] RESPONSE STATUS CODE -->  200
+[-] RESPONSE BODY -->  {"data":"HelloWorld","timestamp":1608466919973}
+
+[+]  GET  REQUEST -->  http://localhost:5000/concatenate/
+[-] RESPONSE STATUS CODE -->  400
+[-] RESPONSE BODY -->  {"message":"It is mandatory to introduce the parameters <cad1> and <cad2>."}
+
+[+]  GET  REQUEST -->  http://localhost:5000/users/4
+[-] RESPONSE STATUS CODE -->  200
+[-] RESPONSE BODY -->  {"data":"user4","timestamp":1608466926064}
+
+[+]  GET  REQUEST -->  http://localhost:5000/users/a
+[-] RESPONSE STATUS CODE -->  404
+[-] RESPONSE BODY -->  {"message":"The user ID passed in the URL doesnt exist"}
+
+[+]  GET  REQUEST -->  http://localhost:5000/users/100
+[-] RESPONSE STATUS CODE -->  404
+[-] RESPONSE BODY -->  {"message":"The user ID passed in the URL doesnt exist"}
+
+[+]  GET  REQUEST -->  http://localhost:5000/test/
+[-] RESPONSE STATUS CODE -->  404
+[-] RESPONSE BODY -->  {"message":"The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again."}
+
+[+]  POST  REQUEST -->  http://localhost:5000/users/4
+[-] RESPONSE STATUS CODE -->  405
+[-] RESPONSE BODY -->  {"message":"The method is not allowed for the requested URL."}
+```
+
 ## 5. Documentación de la práctica
 
 Tal y como se menciona en [el artículo propuesto en la asignatura](https://realpython.com/documenting-python-code/), un proyecto debe **comentarse y documentarse**. La parte de comentarios va más destinada a los desarrolladores para que el código desarrollado sea fácilmente entendible. La parte de documentación está destinada a los desarrolladores y a los usuarios que quieren utilizar la aplicación, proyecto, script, etc. 
